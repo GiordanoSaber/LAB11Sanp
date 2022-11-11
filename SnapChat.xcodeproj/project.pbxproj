@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A67079BA96FA3053197BC3B7 /* Pods_SnapChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA6A83FDB47E231CB5F4B9 /* Pods_SnapChat.framework */; };
+		D868776E2919941800567488 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868776D2919941800567488 /* SnapsViewController.swift */; };
+		D868777029199D5600567488 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868776F29199D5600567488 /* ImagenViewController.swift */; };
+		D86877722919B77200567488 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86877712919B77200567488 /* ElegirUsuarioViewController.swift */; };
+		D8687776291ED16000567488 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8687775291ED16000567488 /* Usuario.swift */; };
 		D89CEE922910500400939ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CEE912910500400939ACA /* AppDelegate.swift */; };
 		D89CEE942910500400939ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CEE932910500400939ACA /* SceneDelegate.swift */; };
 		D89CEE962910500400939ACA /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CEE952910500400939ACA /* iniciarSesionViewController.swift */; };
@@ -22,6 +26,11 @@
 		18BA6A83FDB47E231CB5F4B9 /* Pods_SnapChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		390672FB9317F02942C30392 /* Pods-SnapChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChat.debug.xcconfig"; path = "Target Support Files/Pods-SnapChat/Pods-SnapChat.debug.xcconfig"; sourceTree = "<group>"; };
 		C4403D4909FAC2128E190530 /* Pods-SnapChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChat.release.xcconfig"; path = "Target Support Files/Pods-SnapChat/Pods-SnapChat.release.xcconfig"; sourceTree = "<group>"; };
+		D868776C291992A900567488 /* SnapChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapChat.entitlements; sourceTree = "<group>"; };
+		D868776D2919941800567488 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		D868776F29199D5600567488 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		D86877712919B77200567488 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		D8687775291ED16000567488 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		D89CEE8E2910500400939ACA /* SnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89CEE912910500400939ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89CEE932910500400939ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +72,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D8687773291ED0D400567488 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D89CEE952910500400939ACA /* iniciarSesionViewController.swift */,
+				D868776F29199D5600567488 /* ImagenViewController.swift */,
+				D86877712919B77200567488 /* ElegirUsuarioViewController.swift */,
+				D868776D2919941800567488 /* SnapsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8687774291ED13D00567488 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				D8687775291ED16000567488 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		D89CEE852910500400939ACA = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +112,12 @@
 		D89CEE902910500400939ACA /* SnapChat */ = {
 			isa = PBXGroup;
 			children = (
+				D8687774291ED13D00567488 /* Modelos */,
+				D8687773291ED0D400567488 /* ViewControllers */,
+				D868776C291992A900567488 /* SnapChat.entitlements */,
 				D89CEEA8291050AA00939ACA /* GoogleService-Info.plist */,
 				D89CEE912910500400939ACA /* AppDelegate.swift */,
 				D89CEE932910500400939ACA /* SceneDelegate.swift */,
-				D89CEE952910500400939ACA /* iniciarSesionViewController.swift */,
 				D89CEE972910500400939ACA /* Main.storyboard */,
 				D89CEE9D2910500800939ACA /* Assets.xcassets */,
 				D89CEE9F2910500800939ACA /* LaunchScreen.storyboard */,
@@ -213,8 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8687776291ED16000567488 /* Usuario.swift in Sources */,
+				D86877722919B77200567488 /* ElegirUsuarioViewController.swift in Sources */,
+				D868776E2919941800567488 /* SnapsViewController.swift in Sources */,
 				D89CEE962910500400939ACA /* iniciarSesionViewController.swift in Sources */,
 				D89CEE922910500400939ACA /* AppDelegate.swift in Sources */,
+				D868777029199D5600567488 /* ImagenViewController.swift in Sources */,
 				D89CEE942910500400939ACA /* SceneDelegate.swift in Sources */,
 				D89CEE9C2910500400939ACA /* SnapChat.xcdatamodeld in Sources */,
 			);
@@ -362,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapChat/SnapChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -390,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapChat/SnapChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
